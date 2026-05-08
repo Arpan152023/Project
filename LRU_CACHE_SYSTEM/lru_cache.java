@@ -53,7 +53,7 @@ class LRUCache {
             deleteNode(oldNode);     //node se remove
         }
         if (m.size() == cap) {
-            m.remove(tail.prev.key);   //map re remove
+            m.remove(tail.prev.key);
             deleteNode(tail.prev);     //node se remove
         }
         Node newNode = new Node(key, value);
